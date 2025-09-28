@@ -1,76 +1,91 @@
-# Met Your Buddy – Meteor App Inspector
+# MetYour Buddy 🧩
 
-**Met Your Buddy** is a lightweight Chrome extension that lets you explore and inspect Meteor app data directly from your browser. It’s designed for developers, QA testers, and anyone curious about the inner workings of Meteor applications.
+**MetYour Buddy** is a powerful Chrome Developer Tool extension designed to help Meteor developers inspect, debug, and understand their Meteor applications — all directly from the browser.
 
----
-
-## 🌟 Key Features
-
-### 1. **MiniMongo Collection Explorer**
-- Browse all collections in the Meteor app.
-- View documents in **grid, table, or tree view**.
-- See **document counts** and quickly navigate large collections.
-
-### 2. **Filter, Search & Query**
-- Quickly find the data you need with **real-time filtering**.
-- Search across multiple fields at once.
-- Autocomplete suggestions for field names for faster queries.
-
-### 3. **Document Inspector**
-- Inspect any document in **expandable JSON format**.
-- Easily view nested fields and details.
-- Copy JSON content to clipboard with a single click.
-
-### 4. **Floating Toggle / Quick Access**
-- Access the extension anywhere with a **floating button**.
-- Minimal disruption to your workflow; open or close it anytime.
-
-### 5. **Theming & UI Customization**
-- Switch between **dark and light modes**.
-- Responsive layout adjusts to any screen size.
-- Resize panels for optimal viewing of collections and documents.
+It provides deep visibility into **MiniMongo collections**, **DDP messages**, **method calls**, and **subscriptions** — making it an essential companion for Meteor developers.
 
 ---
 
-## 🚀 How to Use
+## 🚀 Features
 
-1. Open any Meteor application in Chrome.
-2. Click the **floating toggle button** to open the extension.
-3. Select a collection from the list to view documents.
-4. Use the **search/filter bar** to find specific data quickly.
-5. Click on a document to inspect it in JSON format.
-6. Copy or export JSON data as needed.
+### 🔍 MiniMongo Explorer
+- Browse and inspect client-side collections in real time.
+- View and analyze documents with a built-in JSON inspector.
+- Search, filter, and sort data easily.
 
----
+### ⚡ Method Inspector
+- View all active and recently called Meteor methods.
+- Manually call any available method with arguments.
+- Inspect call results and errors in real time.
+- Filter and search through method logs instantly.
 
-## 🎬 Visual Walkthrough (Coming Soon)
+### 🌐 Subscription Inspector
+- Track all active Meteor subscriptions.
+- See subscription arguments, status (`pending` / `ready`), and timestamps.
+- Automatically updates when subscriptions start or stop.
 
-### Open Extension
-![Floating Toggle Button](assets/screenshots/floating-toggle.gif)
-
-### Browse Collections
-![Collection Explorer](assets/screenshots/collection-explorer.gif)
-
-### Filter & Search
-![Filter Documents](assets/screenshots/filter-search.gif)
-
-### Inspect Documents
-![Document Inspector](assets/screenshots/document-inspector.gif)
+### 🛰️ DDP Monitor
+- Observe raw DDP messages exchanged between client and server.
+- Monitor method calls, data updates, and subscription events.
+- Ideal for debugging reactivity and live data flows.
 
 ---
 
-## 📄 Benefits
+## 💡 Why MetYour Buddy?
 
-- Quickly explore app data without modifying the code.
-- Inspect nested structures and relationships in collections.
-- Save time with powerful filtering and autocomplete features.
-- Lightweight and easy-to-use overlay that works on any Meteor app.
+MetYour Buddy simplifies Meteor debugging — no need to dig into the console or add temporary logs.  
+It provides a **clean, structured interface** that exposes what’s happening inside your Meteor app.
+
+Perfect for:
+- Meteor developers who want visibility into DDP traffic.
+- Debugging reactivity and data flow.
+- Understanding app behavior without modifying source code.
 
 ---
 
-## 🔹 Ideal For
+## 🧭 How to Use
 
-- Meteor developers looking for a fast data inspector.
-- QA testers verifying data in live apps.
-- Anyone learning or analyzing Meteor app structures.
+1. **Install MetYour Buddy** from the Chrome Web Store.
+2. Open a web app built with **Meteor.js**.
+3. Click the **MetYour Buddy icon** in your Chrome toolbar.
+4. Explore:
+   - **MiniMongo Collections**
+   - **Method Inspector**
+   - **Subscription Inspector**
+   - **DDP Monitor**
 
+All panels update **live** as data changes in your Meteor app.
+
+---
+
+## 🧩 Permissions
+
+MetYour Buddy requires minimal permissions:
+- `activeTab`: to interact with the current tab’s Meteor context.
+- `scripting`: to inject the inspection overlay and communicate with the app.
+
+It does **not** collect or transmit any user data.
+
+---
+
+## 🔒 Privacy
+
+Your data is **100% private**.  
+MetYour Buddy runs entirely in your browser — no external servers, no analytics, and no data sharing.
+
+---
+
+## 🧑‍💻 Developer
+
+Created with ❤️ by **Nirnaya**.  
+MetYour Buddy is built for developers who love Meteor — just like you.
+
+---
+
+## 📄 License
+
+This project is released under the **MIT License**.
+
+---
+
+> 💬 _MetYour Buddy — Your trusted companion for debugging Meteor apps._
